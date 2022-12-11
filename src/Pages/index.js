@@ -1,5 +1,5 @@
 import Cadastro from './Cadastro'
-import Entrar from './Entrar'
+import Login from './Login'
 import Home from './Home'
 
-export {Cadastro, Entrar, Home};
+export {Cadastro, Login, Home};

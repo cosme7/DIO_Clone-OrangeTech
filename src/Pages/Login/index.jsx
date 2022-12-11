@@ -1,10 +1,12 @@
 import React from 'react'
 import * as S from './style'
 
-export default function Entrar() {
+export default function Login() {
   return (
     <>
-      <h1>Entrar</h1>
+      <main>
+        
+      </main>
     </>
   )
 }

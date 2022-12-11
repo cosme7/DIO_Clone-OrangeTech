@@ -26,19 +26,13 @@ export default createGlobalStyle`
     --clr-gr: #23DD7A;
     /* Cor Background */
     --bg-dark: #151515;
-    --bg-accent: #E4105D;
+    --bg-pk: #E4105D;
     --bg-light: #1e192c;
     --bg-gr: #565656;
     --bg-gr-light:#3B4651;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list']{
-    list-style: none;
-}
-
- /* Set core root defaults */
+/* Set core root defaults */
 html:focus-within{
     scroll-behavior: smooth;
 }
