@@ -13,6 +13,25 @@ export default createGlobalStyle`
     box-sizing: border-box;
 }
 
+:root{
+    /* Font-Weight */
+    --fw-400: 400;
+    --fw-700: 700;
+    /* Font-Family */
+    --ff-primary: 'Open Sans', sans-serif;
+    /* Cor da Letra */
+    --clr-pk: #E4105D;
+    --clr-wt: #FFFFFF;
+    --clr-yw: #E5E044;
+    --clr-gr: #23DD7A;
+    /* Cor Background */
+    --bg-dark: #151515;
+    --bg-accent: #E4105D;
+    --bg-light: #1e192c;
+    --bg-gr: #565656;
+    --bg-gr-light:#3B4651;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list']{
