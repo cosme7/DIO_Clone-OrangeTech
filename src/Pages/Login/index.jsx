@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Input from '../../Components/Input'
 import Button from '../../Components/Button'
 import * as S from './style'
@@ -20,7 +21,7 @@ export default function Login() {
               </S.Form>
               <S.BoxLinks>
                 <a href="https://www.dio.me/" target='_blank' rel="noreferrer">Esqueci minha senha</a>
-                <a href="https://www.dio.me/" target='_blank' rel="noreferrer">Criar conta</a>
+                <Link to='/cadastro'>Criar conta</Link>
               </S.BoxLinks>
             </S.BoxTxt>
           </S.BoxLogin>

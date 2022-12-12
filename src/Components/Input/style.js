@@ -24,7 +24,7 @@ export const Input = styled.input`
     &::placeholder{
         font-family: var(--ff-primary);
         color: var(--clr-wt);
-        opacity: 0.9;
+        opacity: 0.6;
     }
 
     &:focus{
