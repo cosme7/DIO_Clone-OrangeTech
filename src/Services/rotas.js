@@ -6,14 +6,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export default function rotas() {
   return (
     <>
-        <Router>
-          <Header />
+      <Router>
+        <Header />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/entrar' element={<Login />} />
+            <Route path='/login' element={<Login />} />
             <Route path='/cadastro' element={<Cadastro />} />
-          </Routes>
-        </Router> 
+        </Routes>
+      </Router> 
     </>
   )
 }

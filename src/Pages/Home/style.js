@@ -28,39 +28,25 @@ export const BoxTxt = styled.div`
 
     h2{
         max-width: 20ch;
-        font-size: clamp(2rem, 2.2vw, 3rem);
+        font-size: clamp(2rem, 4vw, 4.5rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
         color: var(--clr-wt);
     }
 
     span{
-        color: var(--clr-pk);
+        background: linear-gradient(90deg, rgb(166, 75, 214) 0.1%, rgb(227, 18, 96) 55.24%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
     }
 
     p{
         max-width: 40ch;
         margin-block: 1rem 4rem;
-        font-size: clamp(1rem, 1.2vw, 1.5rem);
+        font-size: clamp(1rem, 1.4vw, 1.8rem);
         font-family: var(--ff-primary);  
         font-weight: var(--fw-400);      
         color: var(--clr-wt);
-    }
-`;
-
-export const BtnEnter = styled.button`
-    padding: 0.1em 2em;
-    border-radius: 50px;
-    background-color: var(--bg-pk);
-    outline: 1px solid var(--bg-pk);
-    outline-offset: 5px;
-    cursor: pointer;
-    border: none;
-
-    a{
-        font-size: clamp(1rem, 1.2vw, 1.5rem);
-        font-family: var(--ff-primary);
-        color: var(--clr-wt);
-        text-decoration: none;
     }
 `;

@@ -32,9 +32,3 @@ export const List = styled.ul`
         text-decoration: none;
     }
 `;
-
-export const Button = styled.button`
-    padding: .2em 2.5em;
-    border-radius: 30px;
-    background-color: var(--bg-gr);
-`;

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Button from '../Button';
 import Logo from '../../Assets/logo.svg'
-import * as S from './style'
+import * as S from './style';
 
 export default function Header() {
   return (
@@ -16,14 +17,10 @@ export default function Header() {
                   <Link to='/'>Home</Link>
                 </li>
                 <li>
-                  <S.Button>
-                    <Link to='/entrar'>Entrar</Link>
-                  </S.Button>
+                  <Button path='/login' title='Entrar' variant='others'/>
                 </li>
                 <li>
-                  <S.Button>
-                    <Link to='/cadastro'>Cadastro</Link>
-                  </S.Button>
+                  <Button path='/cadastro' title='Cadastrar' variant='others'/>
                 </li>
               </S.List>
             </nav>
