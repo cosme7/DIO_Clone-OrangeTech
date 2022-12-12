@@ -17,7 +17,7 @@ export default function Login() {
               <S.Form>
                 <Input correio='correio' type='email' name='email' placeholder='E-mail' />
                 <Input senha='senha' type='password' name='password' placeholder='Password' />
-                <Button title='Entrar'/>
+                <Button title='Entrar' path='/feed'/>
               </S.Form>
               <S.BoxLinks>
                 <a href="https://www.dio.me/" target='_blank' rel="noreferrer">Esqueci minha senha</a>

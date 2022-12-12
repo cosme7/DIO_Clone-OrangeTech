@@ -28,8 +28,10 @@ export default createGlobalStyle`
     --bg-dark: #151515;
     --bg-pk: #E4105D;
     --bg-light: #1e192c;
+    --bg-prog: #23DD7A;
     --bg-gr: #565656;
     --bg-gr-light:#3B4651;
+    --bg-wt: #FFFFFF;
 }
 
 /* Set core root defaults */
