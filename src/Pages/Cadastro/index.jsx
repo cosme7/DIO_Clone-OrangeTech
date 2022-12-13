@@ -1,10 +1,9 @@
 import React from 'react'
-import Input from '../../Components/Input'
 import Button from '../../Components/Button'
 import { Link } from 'react-router-dom'
 import * as S from './style'
 
-export default function Cadastro() {
+export default function Cadastro({people, }) {
   return (
     <>
       <main>
@@ -15,9 +14,9 @@ export default function Cadastro() {
               <h3>Comece agora grátis</h3>
               <p>Crie sua conta e make the change._</p>
               <S.Form>
-                <Input pessoas='pessoas' type='name' name='name' placeholder='Nome Completo' />
-                <Input correio='correio' type='email' name='email' placeholder='E-mail' />
-                <Input senha='senha' type='password' name='password' placeholder='Password' />
+                <input name='name' type="name" placeholder='Nome completo' />
+                <input name='email' type="email" placeholder='E-mail' />
+                <input name='password' type="password" placeholder='Password' />
                 <Button title='Criar minha Conta'/>
               </S.Form>
               <p>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</p>

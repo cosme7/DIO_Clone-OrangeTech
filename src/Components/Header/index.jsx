@@ -17,10 +17,14 @@ export default function Header() {
                   <Link to='/'>Home</Link>
                 </li>
                 <li>
-                  <Button path='/login' title='Entrar' variant='others'/>
+                  <Link to='/login'>
+                      <Button title='Entrar' variant='others' />
+                  </Link>
                 </li>
                 <li>
-                  <Button path='/cadastro' title='Cadastrar' variant='others'/>
+                    <Link to='/cadastro'>
+                      <Button title='Cadastro' variant='others' />
+                    </Link>
                 </li>
               </S.List>
             </nav>

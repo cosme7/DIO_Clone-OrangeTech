@@ -34,24 +34,15 @@ export const BoxTxt = styled.div`
         font-weight: var(--fw-700);
         color: var(--clr-wt);
     }
-
-    p{
-        margin-block: 1rem 2rem;
-        font-size: clamp(1rem, 1.4vw, 1.7rem);
-        font-family: var(--ff-primary);
-        font-weight: var(--fw-400);
-        color: var(--clr-wt); 
-        opacity: .9;
-    }
 `;
 
-export const Form = styled.form`
-    display: flex;
-    flex-direction: column;
-
-    button{
-        margin-top: 3rem;
-    }
+export const DoIt = styled.p`
+    margin-block: 1rem 2rem;
+    font-size: clamp(1rem, 1.4vw, 1.7rem);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-400);
+    color: var(--clr-wt); 
+    opacity: .9;
 `;
 
 export const BoxLinks = styled.div`

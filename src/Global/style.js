@@ -24,6 +24,7 @@ export default createGlobalStyle`
     --clr-wt: #FFFFFF;
     --clr-yw: #E5E044;
     --clr-gr: #23DD7A;
+    --clr-error: red;
     /* Cor Background */
     --bg-dark: #151515;
     --bg-pk: #E4105D;
