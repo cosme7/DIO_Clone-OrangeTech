@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useNavigate } from "react-router-dom";
-import { api } from '../../API/api';
+import { api } from '../../Api/api';
 
 import Button from '../Button'
 import Input from '../Input'
@@ -12,8 +12,8 @@ import * as yup from 'yup';
 
 import * as S from './style'
 
-export default function Form() {
-
+export default function FormLog() {
+ 
     const schema = yup.object({
         email: yup.string().email('Favor por um e-mail válido!').required(''),
         password: yup.string().min(6, 'No mínimo 6 caracteres!').required(''),
@@ -23,18 +23,17 @@ export default function Form() {
   
     const { control, handleSubmit, formState: { errors }} = useForm({
         resolver: yupResolver(schema),
-        mode: 'onChange',
+        mode: 'onChange'
     });
   
     const onSubmit = async (formData) => {
         try{
-            const {data} = await api.get(`users?email=${formData.email}&senha=${formData.senha}`);
-            console.log('retorno api', data)
-            if(data.length === 1){
+            const {data} = await api.get(`/users?email=${formData.email}&password=${formData.password}`);
+            if(data.length && data[0].id){
                 navigate('/feed') 
                 return
             }
-        }catch{
+        }catch(e){
             alert('Houve um Erro, tente novamente!')
         }
     };
@@ -42,8 +41,8 @@ export default function Form() {
   return (
     <>
         <S.Forms onSubmit={handleSubmit(onSubmit)}>
-            <Input control={control} errorMessage={errors?.email?.message} type='email' name='email' placeholder='E-mail' />
-            <Input control={control} errorMessage={errors?.password?.message} type='password' name='password' placeholder='Password' />
+            <Input control={control} errorMessage={errors.email?.message} type='email' name='email' placeholder='E-mail' className='email' />
+            <Input control={control} errorMessage={errors.password?.message} type='password' name='password' placeholder='Password' className='senha' />
             <Button title='Entrar' type='submit'/>
         </S.Forms>
     </>

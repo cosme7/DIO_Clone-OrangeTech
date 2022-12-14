@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Form from '../../Components/Form';
+import Form from '../../Components/FormLog';
 import * as S from './style'
 
 export default function Login() {
@@ -13,7 +13,7 @@ export default function Login() {
             <S.BoxTxt>
               <h3>Faça seu cadastro</h3>
               <S.DoIt>Faça seu login e make the change._</S.DoIt>
-              <Form title='Comece Agora'/>
+              <Form />
               <S.BoxLinks>
                 <a href="https://www.dio.me/" target='_blank' rel="noreferrer">Esqueci minha senha</a>
                 <Link to='/cadastro'>Criar conta</Link>
