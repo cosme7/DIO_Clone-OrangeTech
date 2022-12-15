@@ -35,10 +35,10 @@ export const Info = styled.section`
     gap: 1.5rem;
 
     h3{
-        font-size: clamp(1rem, 1.2vw, 1.4rem);
+        font-size: clamp(1rem, 1.4vw, 1.8rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
         color: var(--clr-wt);
-        opacity: 0.5;
+        opacity: 0.8;
     }
 `;

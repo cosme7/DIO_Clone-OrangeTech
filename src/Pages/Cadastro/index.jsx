@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../../Components/Header'
 import Form from '../../Components/FormReg/index.'
 import { Link } from 'react-router-dom'
 import * as S from './style'
@@ -6,6 +7,7 @@ import * as S from './style'
 export default function Cadastro({people, }) {
   return (
     <>
+      <Header />
       <main>
         <S.Container>
           <S.BoxLogin>

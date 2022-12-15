@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../../Components/Header'
 import { Link } from 'react-router-dom'
 import Button from '../../Components/Button'
 import Testimonials from '../../Assets/home_01.png'
@@ -7,6 +8,7 @@ import * as S from './style'
 export default function Home() {
   return (
     <>
+      <Header />
       <main>
         <S.Container>
           <S.BoxHome>
