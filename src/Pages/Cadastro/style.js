@@ -8,6 +8,10 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     background-color: var(--bg-light);
+
+    @media screen and (max-width:48em) {
+        align-items: flex-start;
+    }
 `;
 
 export const BoxRegister = styled.div`
@@ -29,12 +33,12 @@ export const BoxRegister = styled.div`
 
     @media screen and (max-width:48em) {
         width: 95%;
+        margin-top: 3rem;
         flex-direction: column;
         gap: 2rem;
 
         h2{
             max-width: 65ch;
-            margin-top: 5rem;
             font-weight: var(--fw-400);
         }
     }

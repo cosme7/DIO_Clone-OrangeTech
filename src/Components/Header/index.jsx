@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Menu from './mobile'
 import Button from '../Button';
 import Logo from '../../Assets/logo.svg'
 import Perfil from '../../Assets/icon_04.svg'
@@ -36,23 +37,26 @@ export default function Header({autenticado}) {
                 </S.ImgWrapper>
               </S.LogIn>
             ) : (
-              <nav>
-                <S.List>
-                  <li>
-                    <Link to='/'>Home</Link>
-                  </li>
-                  <li>
-                    <Link to='/login'>
-                        <Button title='Entrar' variant='others' />
-                    </Link>
-                  </li>
-                  <li>
-                      <Link to='/cadastro'>
-                        <Button title='Cadastro' variant='others' />
+              <>
+                <Menu />
+                <S.Desktop>
+                  <ul>
+                    <li>
+                      <Link to='/'>Home</Link>
+                    </li>
+                    <li>
+                      <Link to='/login'>
+                          <Button title='Entrar' variant='others' />
                       </Link>
-                  </li>
-                </S.List>
-              </nav>
+                    </li>
+                    <li>
+                        <Link to='/cadastro'>
+                          <Button title='Cadastro' variant='others' />
+                        </Link>
+                    </li>
+                  </ul>
+                </S.Desktop>
+              </>
             )}
           </S.Box>
         </S.Container>

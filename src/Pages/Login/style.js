@@ -8,6 +8,10 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     background-color: var(--bg-light);
+
+    @media screen and (max-width:48em) {
+        align-items: flex-start;
+    }
 `;
 
 export const BoxLogin = styled.div`
@@ -17,7 +21,7 @@ export const BoxLogin = styled.div`
     justify-content: space-evenly;
 
     h2{
-        max-width: 32ch;
+        max-width: 25ch;
         border-top: 10px solid;
         border-image-source: linear-gradient(90deg, rgb(132, 70, 172), transparent 30%);
         border-image-slice: 1;
@@ -29,6 +33,7 @@ export const BoxLogin = styled.div`
 
     @media screen and (max-width:48em) {
         width: 95%;
+        margin-top: 3rem;
         flex-direction: column;
         gap: 2rem;
 

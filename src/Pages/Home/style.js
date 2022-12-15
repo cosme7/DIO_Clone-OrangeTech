@@ -23,7 +23,6 @@ export const Container = styled.section`
             opacity: .5;
         }
     }
-
 `;
 
 export const BoxHome = styled.div`
@@ -81,6 +80,10 @@ export const BoxTxt = styled.div`
 
         h2, p{
             text-align: center;
+        }
+
+        p{
+            margin-block: 1rem 2rem;
         }
     }
 `;

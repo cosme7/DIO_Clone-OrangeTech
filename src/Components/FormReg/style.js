@@ -23,4 +23,10 @@ export const Forms = styled.form`
     input.senha{
         background-image: url(${Senha});
     }
+
+    @media screen and (max-width:48em) {
+        button{
+            margin-top: 1rem;
+        }
+    }
 `;
