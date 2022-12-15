@@ -10,11 +10,11 @@ export const Container = styled.section`
 `;
 
 export const Box = styled.div`
-    padding-inline: 1rem 0;
+    padding: 0 0 .5rem 1rem;
     display: flex;
     flex-direction: column;
 
-    h2{
+    h4{
         margin-block-start: 1rem;
         font-size: clamp(1rem, 1.4vw, 1.8rem);
         font-family: var(--ff-primary);

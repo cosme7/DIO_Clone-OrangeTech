@@ -4,6 +4,10 @@ export const Container = styled.section`
     width: 100%;
     padding: 3rem 0.5rem;
     background-color: var(--bg-light);
+
+    @media screen and (max-width:48em) {
+        padding: 1rem 0.5rem;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -12,6 +16,11 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: clamp(1rem, 2vw, 3rem);
+
+    @media screen and (max-width:48em) {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const CardWrapper = styled.section`
@@ -21,7 +30,7 @@ export const CardWrapper = styled.section`
     gap: 2rem;
 
     h2{
-        font-size: clamp(1rem, 1.8vw, 2.4rem);
+        font-size: clamp(2rem, 2.3vw, 3rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
         color: var(--clr-wt);
@@ -40,5 +49,9 @@ export const Info = styled.section`
         font-weight: var(--fw-700);
         color: var(--clr-wt);
         opacity: 0.8;
+    }
+
+    @media screen and (max-width:48em) {
+        display: none;
     }
 `;

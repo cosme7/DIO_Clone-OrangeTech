@@ -8,7 +8,7 @@ export const Container = styled.section`
 `;
 
 export const Box = styled.div`
-    max-width: 92%;
+    width: 92%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -18,6 +18,10 @@ export const Box = styled.div`
     img.logo{
         width: 97px;
     }
+
+    @media screen and (max-width:48em) {
+        width: 100%;
+    }
 `;
 
 export const LogIn = styled.div`
@@ -26,6 +30,11 @@ export const LogIn = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width:48em) {
+        justify-content: flex-end;
+        gap: 1rem;
+    }
 `;
 
 export const FormWrapper = styled.div`
@@ -63,6 +72,12 @@ export const FormWrapper = styled.div`
         font-weight: var(--fw-700);
         color: var(--clr-wt);
         text-decoration: none;
+    }
+
+    @media screen and (max-width:48em) {
+        form{
+            display: none;
+        }
     }
 `;
 

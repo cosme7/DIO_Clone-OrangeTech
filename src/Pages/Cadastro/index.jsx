@@ -10,7 +10,7 @@ export default function Cadastro({people, }) {
       <Header />
       <main>
         <S.Container>
-          <S.BoxLogin>
+          <S.BoxRegister>
             <h2>A plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais rápido nas empresas mais desejadas.</h2>
             <S.BoxTxt>
               <h3>Comece agora grátis</h3>
@@ -19,7 +19,7 @@ export default function Cadastro({people, }) {
               <S.Acc>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</S.Acc>
               <S.Acc>Já tenho conta. <Link to='/login'>Fazer Login</Link></S.Acc>
             </S.BoxTxt>
-          </S.BoxLogin>
+          </S.BoxRegister>
         </S.Container>
       </main>
     </>

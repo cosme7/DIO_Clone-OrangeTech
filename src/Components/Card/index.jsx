@@ -17,7 +17,7 @@ export default function Card() {
                         <p>Há 8 minutos</p>
                     </div>
                 </S.Wrapper>
-                <h2>Projeto para curso de HTML e CSS</h2>
+                <h4>Projeto para curso de HTML e CSS</h4>
                 <p>Projeto feito no curso de html e css no bootcamp da dio do Global avanade... <a href="https://www.dio.me/" target='_blank' rel="noreferrer">Ver Mais</a></p>
                 <p>#HTML #CSS #Javascript</p>
                 <p><FiThumbsUp /> 10</p>

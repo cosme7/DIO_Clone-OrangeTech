@@ -1,24 +1,49 @@
 import styled from "styled-components";
+import Background from '../../Assets/home_01.png'
 
 export const Container = styled.section`
     width: 100%;
     min-height: 93.8vh;
+    padding-inline: 0.5rem;
     display: flex;
     align-items: center;
     background-color: var(--bg-light);
+    position: relative;
+    isolation: isolate;
+
+    @media screen and (max-width:48em) {
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background-image: url(${Background});
+            background-repeat: no-repeat;
+            background-size: 100% 50%;
+            opacity: .5;
+        }
+    }
+
 `;
 
 export const BoxHome = styled.div`
     width: 92%;
     margin: 0 auto;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-    & > *{
-        flex-basis: 100%;
-    } 
+    img{
+        width: 100%;
+    }
+
+    @media screen and (max-width:48em) {
+        grid-template-columns: 1fr;
+
+        img{
+            display: none;
+        }
+    }
 `;
 
 export const BoxTxt = styled.div`
@@ -28,7 +53,7 @@ export const BoxTxt = styled.div`
 
     h2{
         max-width: 20ch;
-        font-size: clamp(2rem, 4vw, 4.5rem);
+        font-size: clamp(2.2rem, 4vw, 4.5rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
         color: var(--clr-wt);
@@ -48,5 +73,14 @@ export const BoxTxt = styled.div`
         font-family: var(--ff-primary);  
         font-weight: var(--fw-400);      
         color: var(--clr-wt);
+    }
+
+    @media screen and (max-width:48em) {
+        width: 100%;
+        align-items: center;
+
+        h2, p{
+            text-align: center;
+        }
     }
 `;

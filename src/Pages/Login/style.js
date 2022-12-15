@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
     width: 100%;
     min-height: 93.8vh;
+    padding-inline: 0.5rem;
 
     display: flex;
     align-items: center;
@@ -17,10 +18,30 @@ export const BoxLogin = styled.div`
 
     h2{
         max-width: 32ch;
+        border-top: 10px solid;
+        border-image-source: linear-gradient(90deg, rgb(132, 70, 172), transparent 30%);
+        border-image-slice: 1;
         font-size: clamp(2rem, 2.5vw, 3rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
         color: var(--clr-wt);
+    }
+
+    @media screen and (max-width:48em) {
+        width: 95%;
+        flex-direction: column;
+        gap: 2rem;
+
+        h2{
+            max-width: 65ch;
+            font-weight: var(--fw-400);
+        }
+    }
+
+    @media screen and (max-width:36em) {
+        h2{
+            display: none;
+        }
     }
 `;
 
@@ -29,10 +50,17 @@ export const BoxTxt = styled.div`
     flex-direction: column;
 
     h3{
+        border-top: 10px solid;
+        border-image-source: linear-gradient(90deg, rgb(132, 70, 172), transparent 30%);
+        border-image-slice: 1;
         font-size: clamp(2rem, 2.5vw, 3rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
         color: var(--clr-wt);
+    }
+
+    @media screen and (max-width:48em) {
+        width: 100%;
     }
 `;
 
@@ -43,6 +71,10 @@ export const DoIt = styled.p`
     font-weight: var(--fw-400);
     color: var(--clr-wt); 
     opacity: .9;
+
+    @media screen and (max-width:48em) {
+        margin-block: 0.5rem 1rem;
+    }
 `;
 
 export const BoxLinks = styled.div`
@@ -65,5 +97,9 @@ export const BoxLinks = styled.div`
 
     a:nth-child(2){
         color: var(--clr-gr);
+    }
+
+    @media screen and (max-width:48em) {
+        margin-block: 2rem 0;
     }
 `;
