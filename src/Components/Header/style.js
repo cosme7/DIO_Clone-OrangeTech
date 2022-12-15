@@ -163,19 +163,6 @@ export const Txt = styled.span`
     width: 1px;
 `;
 
-export const MenuBG = styled.div`
-    width: 5rem;
-    aspect-ratio: 1;
-    border-radius: 50px;
-    position: fixed;
-    top: 1.5rem;
-    right: 1rem;
-    z-index: 1000;
-    transform: ${({open}) => (open ? 'scale(1000)' : 'scale(0)')};
-    transition: transform 0.3s ease-in-out;
-    background-image: linear-gradient( rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.5) );
-`;
-
 export const Mobile = styled.nav`
     width: 100%;
     min-height: 100vh;
