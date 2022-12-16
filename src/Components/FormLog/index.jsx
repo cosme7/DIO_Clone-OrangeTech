@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useNavigate } from "react-router-dom";
-import api from '../../Api/api';
+import api from '../../Data/api';
 
 import Button from '../Button'
 import Input from '../Input'

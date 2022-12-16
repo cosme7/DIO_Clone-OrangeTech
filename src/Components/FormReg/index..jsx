@@ -1,5 +1,5 @@
 import React from 'react'
-import api from '../../Api/api'
+import api from '../../Data/api'
 
 import Button from '../Button'
 import Input from '../Input'
