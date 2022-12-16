@@ -23,28 +23,28 @@ export default function FormReg() {
         mode: 'onChange'
     });
   
-    const onSubmit = async (formData) => {
-        try{
-          if(isValid){
-            const user = JSON.stringify({
-              name: formData.name,
-              email: formData.email,
-              password: formData.password
-            });
-            const customConfig = {
-              headers: {
-                'Content-Type': 'application/json'
-              }
-            };
-            const {data} = await api.post(`/users`, user, customConfig);
-              if(data.name) {
-                alert(`${data.name} cadastrado(a) com sucesso!`);
-              }
+    const onSubmit = async(formData) => {
+      try{
+        if(isValid){
+          const user = JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            password: formData.password
+          });
+          const customConfig = {
+            headers: {
+            'Content-Type': 'application/json'
             }
-        }catch(e){
-            alert('Erro no cadastro do usuário.');
+          };
+          const {data} = await api.post(`/users`, user, customConfig);
+          if(data.name) {
+            alert(`${data.name} cadastrado(a) com sucesso!`);
+          }
         }
-    };
+      }catch(e){
+        console.log('Erro no cadastro do usuário.');
+      }
+    }
 
   return (
     <>
