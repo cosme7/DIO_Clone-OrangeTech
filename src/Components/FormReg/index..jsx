@@ -50,9 +50,9 @@ export default function FormReg() {
   return (
     <>
         <S.Forms onSubmit={handleSubmit(onSubmit)}>
-            <Input control={control} errorMessage={errors?.name?.message} type='name' name='name' placeholder='Nome Completo' className='people' />
-            <Input control={control} errorMessage={errors?.email?.message} type='email' name='email' placeholder='E-mail' className='email' />
-            <Input control={control} errorMessage={errors?.password?.message} type='password' name='password' placeholder='Password' className='senha' />
+            <Input control={control} errorMessage={errors.name?.message} type='name' name='name' placeholder='Nome Completo' className='people' />
+            <Input control={control} errorMessage={errors.email?.message} type='email' name='email' placeholder='E-mail' className='email' />
+            <Input control={control} errorMessage={errors.password?.message} type='password' name='password' placeholder='Password' className='senha' />
             <Button title='Criar minha conta' type='submit'/>
         </S.Forms>
     </>
