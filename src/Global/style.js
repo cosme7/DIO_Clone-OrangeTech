@@ -25,11 +25,13 @@ export default createGlobalStyle`
     --clr-yw: #E5E044;
     --clr-gr: #23DD7A;
     --clr-error: red;
+    --clr-disabled: #7c7a83;
     /* Cor Background */
     --bg-light: #1e192c;
     --bg-dark: #151515;
     --bg-pk: #E4105D;
     --bg-gr-light:#3B4651;
+    --bg-disabled: #3a3841;
     --bg-gr: #565656;
     --bg-gr-dark: #2D2D37;
     --bg-prog: #23DD7A;

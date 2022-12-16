@@ -19,6 +19,16 @@ export const Button = styled.button`
         filter: drop-shadow(0 0 25px var(--bg-pk));
     }
 
+    &:disabled{
+        background-color: var(--bg-disabled);
+        color: var(--clr-disabled);
+        outline: 2px solid var(--bg-disabled);
+    }
+
+    &:disabled:where(:hover, :focus-visible){
+        filter: none;
+    }
+
     ${({variant}) => variant !== 'other' && css`
         padding: .2em 2em;
         border-radius: 30px;

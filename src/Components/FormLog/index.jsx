@@ -21,7 +21,7 @@ export default function FormLog() {
 
     const navigate = useNavigate()
   
-    const { control, handleSubmit, formState: { errors }} = useForm({
+    const { control, handleSubmit, formState: { errors, isValid }} = useForm({
         resolver: yupResolver(schema),
         mode: 'onChange'
     });
@@ -43,7 +43,7 @@ export default function FormLog() {
         <S.Forms onSubmit={handleSubmit(onSubmit)}>
             <Input control={control} errorMessage={errors.email?.message} type='email' name='email' placeholder='E-mail' className='email' />
             <Input control={control} errorMessage={errors.password?.message} type='password' name='password' placeholder='Password' className='senha' />
-            <Button title='Entrar' type='submit'/>
+            <Button title='Entrar' type='submit' disabled={!isValid}/>
         </S.Forms>
     </>
   )
