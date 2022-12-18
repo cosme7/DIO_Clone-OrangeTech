@@ -13,10 +13,10 @@ export default function Home() {
         <S.Container>
           <S.BoxHome>
             <S.BoxTxt>
-              <h2>
+              <h1>
                 <span>Implemente<br /></span> 
                 o seu futuro global agora!
-              </h2>
+              </h1>
               <p>Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novo desafio profissional, evoluindo em comunidade com os melhores experts.</p>
               <Link to='/login'>
                 <Button title='Começar agora' />

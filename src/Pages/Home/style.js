@@ -50,7 +50,7 @@ export const BoxTxt = styled.div`
     flex-direction: column;
     align-items: flex-start;
 
-    h2{
+    h1{
         max-width: 20ch;
         font-size: clamp(2.2rem, 4vw, 4.5rem);
         font-family: var(--ff-primary);
@@ -78,7 +78,7 @@ export const BoxTxt = styled.div`
         width: 100%;
         align-items: center;
 
-        h2, p{
+        h1, p{
             text-align: center;
         }
 
