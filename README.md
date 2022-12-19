@@ -23,7 +23,7 @@ Projeto Desenvolvido em React.Js como DESAFIO da DIO no BootCamp dá OrangeTech+
 * Responsividade
 <img width="200" src="src/Assets/Demo/Mobile_DEMO.png" alt='Mobile' title="Mobile"/>
 
-#### Deploy: https://dio-cosme7.netlify.app/
+#### Deploy: https://dio-csome7.vercel.app/
 
 ##### Meu LinkeDin: 
 <a href="https://www.linkedin.com/in/cosme-da-silva-leite-08baa3219/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
