@@ -1,4 +1,4 @@
-# Dio Clone
+# Dio Clone - Orange Tech+
 <img width="600" src="src/Assets/Demo/Desktop_DEMO.png" alt='Desktop' title="Desktop"/>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cosme7/DIO_Clone-OrangeTech?color=purple&style=for-the-badge)
@@ -28,4 +28,4 @@ Projeto Desenvolvido em React.Js como DESAFIO da DIO no BootCamp dá OrangeTech+
 ##### Meu LinkeDin: 
 <a href="https://www.linkedin.com/in/cosme-da-silva-leite-08baa3219/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
-<p>PS: Caso queira ir na page de <strong>Feed</strong>, só por <strong>/feed</strong> no navegador ou logar na page de login, já que o Cadastro <strong>não funciona</strong> XD, põe <strong>pablo@email.com</strong> senha: <strong>123456</strong></p>
+<p>PS: Caso queira ir na page de <strong>Feed</strong>, só por <strong>/feed</strong> no navegador, a page de Login & Cadastro não funcionam XD.
